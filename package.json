@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "axios": "^1.6.8",
+    "express": "^4.19.1",
+    "http-proxy-middleware": "^2.0.6"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "description": ""
+}

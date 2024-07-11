@@ -11,6 +11,7 @@
 <body>
     <div class="header">
         <span><a href="index.html">오레하 계산기</a></span>
+      <!--  <span><a href="exchange.html">생활재료교환</a></span> -->
     </div>
 
     <div class="container_oreha">
@@ -25,38 +26,50 @@
                 <tr>
                     <td><img src="https://cdn-lostark.game.onstove.com/efui_iconatlas/use/use_9_3.png"></td>
                     <td>고대 유물</td>
-                    <td id="materialPrice1"></td>
-                    <td><input type="number" id="material1"></input></td>
+                    <td id="ancientArtifactPrice"></td>
+                    <td><input type="number" id="ancientArtifact"></input></td>
                 </tr>
                 <tr>
                     <td><img src="https://cdn-lostark.game.onstove.com/efui_iconatlas/use/use_9_4.png"></td>
                     <td>희귀한 유물</td>
-                    <td id="materialPrice2"></td>
-                    <td><input type="number" id="material2"></input></td>
+                    <td id="rareArtifactPrice"></td>
+                    <td><input type="number" id="rareArtifact"></input></td>
                 </tr>
                 <tr>
                     <td><img src="https://cdn-lostark.game.onstove.com/efui_iconatlas/use/use_9_11.png"></td>
                     <td>오레하 유물</td>
-                    <td id="materialPrice3"></td>
-                    <td><input type="number" id="material3"></input></td>
+                    <td id="orehaArtifactPrice"></td>
+                    <td><input type="number" id="orehaArtifact"></input></td>
+                </tr>
+                <tr>
+                    <td><img src="https://cdn-lostark.game.onstove.com/efui_iconatlas/lifelevel/lifelevel_02_55.png"></td>
+                    <td>아비도스 유물</td>
+                    <td id="abydosArtifactPrice"></td>
+                    <td><input type="number" id="abydosArtifact"></input></td>
                 </tr>
                 <tr>
                     <td><img src="https://cdn-lostark.game.onstove.com/efui_iconatlas/use/use_1_142.png"></td>
                     <td>생선</td>
-                    <td id="materialPrice4"></td>
-                    <td><input type="number" id="material4"></input></td>
+                    <td id="fishPrice"></td>
+                    <td><input type="number" id="fish"></input></td>
                 </tr>
                 <tr>
-                    <td><img src="https://cdn-lostark.game.onstove.com/efui_iconatlas/use/use_8_72.png"></td>
-                    <td>자연산 진주</td>
-                    <td id="materialPrice5"></td>
-                    <td><input type="number" id="material5"></input></td>
+                    <td><img src="https://cdn-lostark.game.onstove.com/efui_iconatlas/use/use_4_49.png"></td>
+                    <td>붉은 살 생선</td>
+                    <td id="redFishPrice"></td>
+                    <td><input type="number" id="redFish"></input></td>
                 </tr>
                 <tr>
                     <td><img src="https://cdn-lostark.game.onstove.com/efui_iconatlas/use/use_8_74.png"></td>
                     <td>오레하 태양 인어</td>
-                    <td id="materialPrice6"></td>
-                    <td><input type="number" id="material6"></input></td>
+                    <td id="orehaFishPrice"></td>
+                    <td><input type="number" id="orehaFish"></input></td>
+                </tr>
+                <tr>
+                    <td><img src="https://cdn-lostark.game.onstove.com/efui_iconatlas/lifelevel/lifelevel_02_53.png"></td>
+                    <td>아비도스 태양 인어</td>
+                    <td id="abydosFishPrice"></td>
+                    <td><input type="number" id="abydosFish"></input></td>
                 </tr>
             </table>
 
@@ -78,6 +91,12 @@
                     <td>최상급 오레하</td>
                     <td id="resultPrice2"></td>
                     <td><input type="number" id="result2"></input></td>
+                </tr>
+                <tr>
+                    <td><img src="https://cdn-lostark.game.onstove.com/efui_iconatlas/use/use_12_86.png"></td>
+                    <td>아비소드 오레하</td>
+                    <td id="resultPrice3"></td>
+                    <td><input type="number" id="result3"></input></td>
                 </tr>
             </table>
             <button id="fetchPriceButton">최저가 가져오기</button>
@@ -112,7 +131,20 @@
                     <td id="bundleProfit3"></td>
                     <td id="useProfit3"></td>
                 </tr>
-
+                <tr>
+                    <td><img src="https://cdn-lostark.game.onstove.com/efui_iconatlas/use/use_12_86.png"></td>
+                    <td>아비도스 오레하 융화 재료(고고학)</td>
+                    <td id="singleProfit4"></td>
+                    <td id="bundleProfit4"></td>
+                    <td id="useProfit4"></td>
+                </tr>
+                <tr>
+                    <td><img src="https://cdn-lostark.game.onstove.com/efui_iconatlas/use/use_12_86.png"></td>
+                    <td>아비도스 오레하 융화 재료(낚시)</td>
+                    <td id="singleProfit5"></td>
+                    <td id="bundleProfit5"></td>
+                    <td id="useProfit5"></td>
+                </tr>
             </table>
 
             <table class="table">

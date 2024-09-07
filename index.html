@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <title>오레하 계산기</title>
-
     <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
     <div class="header">
         <span><a href="index.html">오레하 계산기</a></span>
-      <!--  <span><a href="exchange.html">생활재료교환</a></span> -->
+        <!-- <span><a href="exchange.html">생활재료교환</a></span> -->
     </div>
 
     <div class="container_oreha">
         <div class="table-container">
-            <table class="table">
+            <table class="table" id="materialsTable">
                 <tr>
                     <th>#</th>
                     <th>재료</th>
@@ -27,52 +24,78 @@
                     <td><img src="https://cdn-lostark.game.onstove.com/efui_iconatlas/use/use_9_3.png"></td>
                     <td>고대 유물</td>
                     <td id="ancientArtifactPrice"></td>
-                    <td><input type="number" id="ancientArtifact"></input></td>
+                    <td><input type="number" id="ancientArtifact"></td>
                 </tr>
                 <tr>
                     <td><img src="https://cdn-lostark.game.onstove.com/efui_iconatlas/use/use_9_4.png"></td>
                     <td>희귀한 유물</td>
                     <td id="rareArtifactPrice"></td>
-                    <td><input type="number" id="rareArtifact"></input></td>
+                    <td><input type="number" id="rareArtifact"></td>
                 </tr>
                 <tr>
                     <td><img src="https://cdn-lostark.game.onstove.com/efui_iconatlas/use/use_9_11.png"></td>
                     <td>오레하 유물</td>
                     <td id="orehaArtifactPrice"></td>
-                    <td><input type="number" id="orehaArtifact"></input></td>
+                    <td><input type="number" id="orehaArtifact"></td>
                 </tr>
                 <tr>
                     <td><img src="https://cdn-lostark.game.onstove.com/efui_iconatlas/lifelevel/lifelevel_02_55.png"></td>
                     <td>아비도스 유물</td>
                     <td id="abydosArtifactPrice"></td>
-                    <td><input type="number" id="abydosArtifact"></input></td>
+                    <td><input type="number" id="abydosArtifact"></td>
                 </tr>
                 <tr>
                     <td><img src="https://cdn-lostark.game.onstove.com/efui_iconatlas/use/use_1_142.png"></td>
                     <td>생선</td>
                     <td id="fishPrice"></td>
-                    <td><input type="number" id="fish"></input></td>
+                    <td><input type="number" id="fish"></td>
                 </tr>
                 <tr>
                     <td><img src="https://cdn-lostark.game.onstove.com/efui_iconatlas/use/use_4_49.png"></td>
                     <td>붉은 살 생선</td>
                     <td id="redFishPrice"></td>
-                    <td><input type="number" id="redFish"></input></td>
+                    <td><input type="number" id="redFish"></td>
                 </tr>
                 <tr>
                     <td><img src="https://cdn-lostark.game.onstove.com/efui_iconatlas/use/use_8_74.png"></td>
                     <td>오레하 태양 인어</td>
                     <td id="orehaFishPrice"></td>
-                    <td><input type="number" id="orehaFish"></input></td>
+                    <td><input type="number" id="orehaFish"></td>
                 </tr>
                 <tr>
                     <td><img src="https://cdn-lostark.game.onstove.com/efui_iconatlas/lifelevel/lifelevel_02_53.png"></td>
                     <td>아비도스 태양 인어</td>
                     <td id="abydosFishPrice"></td>
-                    <td><input type="number" id="abydosFish"></input></td>
+                    <td><input type="number" id="abydosFish"></td>
+                </tr>
+                <tr>
+                    <td><img src="https://cdn-lostark.game.onstove.com/efui_iconatlas/use/use_3_252.png"></td>
+                    <td>목재</td>
+                    <td id="woodPrice"></td>
+                    <td><input type="number" id="wood"></td>
+                </tr>
+                <tr>
+                    <td><img src="https://cdn-lostark.game.onstove.com/efui_iconatlas/use/use_3_253.png"></td>
+                    <td>부드러운 목재</td>
+                    <td id="softWoodPrice"></td>
+                    <td><input type="number" id="softWood"></td>
+                </tr>
+                <tr>
+                    <td><img src="https://cdn-lostark.game.onstove.com/efui_iconatlas/lifelevel/lifelevel_02_48.png"></td>
+                    <td>아비도스 목재</td>
+                    <td id="abydosWoodPrice"></td>
+                    <td><input type="number" id="abydosWood"></td>
+                </tr>
+                <tr>
+                    
                 </tr>
             </table>
+            <button id="page1Button">고고학</button>
+            <button id="page2Button">생선</button>
+            <button id="page3Button">벌목</button>
+        </div>
 
+        <div class="table-container">
             <table class="table">
                 <tr>
                     <th>#</th>
@@ -81,26 +104,21 @@
                     <th>수정</th>
                 </tr>
                 <tr>
-                    <td><img src="https://cdn-lostark.game.onstove.com/efui_iconatlas/use/use_8_109.png"></td>
-                    <td>상급 오레하</td>
-                    <td id="resultPrice1"></td>
-                    <td><input type="number" id="result1"></input></td>
-                </tr>
-                <tr>
                     <td><img src="https://cdn-lostark.game.onstove.com/efui_iconatlas/use/use_11_29.png"></td>
                     <td>최상급 오레하</td>
                     <td id="resultPrice2"></td>
-                    <td><input type="number" id="result2"></input></td>
+                    <td><input type="number" id="result2"></td>
                 </tr>
                 <tr>
                     <td><img src="https://cdn-lostark.game.onstove.com/efui_iconatlas/use/use_12_86.png"></td>
                     <td>아비소드 오레하</td>
                     <td id="resultPrice3"></td>
-                    <td><input type="number" id="result3"></input></td>
+                    <td><input type="number" id="result3"></td>
                 </tr>
             </table>
             <button id="fetchPriceButton">최저가 가져오기</button>
         </div>
+
         <div class="table-container">
             <table class="table">
                 <tr>
@@ -109,13 +127,6 @@
                     <th>개당 이익</th>
                     <th>묶음당 이익</th>
                     <th>직접 사용시 이익</th>
-                </tr>
-                <tr>
-                    <td><img src="https://cdn-lostark.game.onstove.com/efui_iconatlas/use/use_8_109.png"></td>
-                    <td>상급 오레하 융화 재료(고고학)</td>
-                    <td id="singleProfit1"></td>
-                    <td id="bundleProfit1"></td>
-                    <td id="useProfit1"></td>
                 </tr>
                 <tr>
                     <td><img src="https://cdn-lostark.game.onstove.com/efui_iconatlas/use/use_11_29.png"></td>
@@ -145,6 +156,13 @@
                     <td id="bundleProfit5"></td>
                     <td id="useProfit5"></td>
                 </tr>
+                <tr>
+                    <td><img src="https://cdn-lostark.game.onstove.com/efui_iconatlas/use/use_12_86.png"></td>
+                    <td>아비도스 오레하 융화 재료(벌목)</td>
+                    <td id="singleProfit6"></td>
+                    <td id="bundleProfit6"></td>
+                    <td id="useProfit6"></td>
+                </tr>
             </table>
 
             <table class="table">
@@ -156,19 +174,16 @@
                 <tr>
                     <td>제작 수수료 감소</td>
                     <td id="reducedFeeAmount">0</td>
-                    <td><input type="number" id="reducedFee"></input></td>
+                    <td><input type="number" id="reducedFee"></td>
                 </tr>
                 <tr>
                     <td>대성공 확률 증가</td>
                     <td id="increasedGreatAmount">0</td>
-                    <td><input type="number" id="increasedGreat"></input></td>
+                    <td><input type="number" id="increasedGreat"></td>
                 </tr>
             </table>
         </div>
     </div>
-
-
+    <script src="index.js"></script>
 </body>
-<script src="index.js"></script>
-
 </html>
